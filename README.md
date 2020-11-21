@@ -1,28 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OBS Streaming App
+
+The App serves to accept a streaming videos from users authorized with Google account and stream it online.
+Only streaming program supoported is the [OBS (Open Broadcaster Software)](https://obsproject.com/)
+
+You can edit, update, create, delete your own streams or watch existing ones online! All what You need is to sign in with Your [Google Account](https://www.google.com/account/about/)
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, switch to `api` directory:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
+Runs the [json-server](https://github.com/typicode/json-server) for simulating full fake REST API in the development mode.
+
+It purpose to store streams related data in a "fake" database
+
+---
+
+In the project directory, switch to `rtmpserver` directory:
+
+### `npm start`
+
+to start [Node.js RTMP Media Server](https://github.com/illuspas/Node-Media-Server)
+
+---
+
+In the project directory, switch to `client` directory:
+
+### `npm start`
+
+Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
+The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
+Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
+Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
+The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

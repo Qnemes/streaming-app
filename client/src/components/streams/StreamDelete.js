@@ -12,7 +12,7 @@ class StreamDelete extends Component {
         return (
             <Fragment>
                 <button onClick={() => this.props.deleteStream(this.props.match.params.id)}
-                        className="ui negative button">Delete</button>
+                    className="ui negative button">Delete</button>
                 <button onClick={() => history.goBack()} className="ui button">Cancel</button>
             </Fragment>
         )
